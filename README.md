@@ -66,13 +66,13 @@ MAIL_ENCRYPTION=tls
 
 **Note: I have used mails almost in every part of this system and therefore missing mail configs will make all transactions to abort**.
 
-Lastly on configs, ensure you have setup database accordingly;
+Lastly on configs, ensure you have set up database accordingly;
 See an example below:
 
 ```dotenv
 DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
-DB_PORT=3306
+DB_PORT=5432
 DB_DATABASE=pezesha
 DB_USERNAME=root
 DB_PASSWORD=****
