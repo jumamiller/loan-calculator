@@ -80,5 +80,10 @@ DB_PASSWORD=****
 
 ## How it works
 
-### Task 1:
+### Task 1 & 2:
+Both share authentication, (rem to get credentials from DB Seeders)
+
+For Loan repayment (Task 2), see th Loan controller.
+
+For Account Management ( Task 1), see the Account Controller.
 

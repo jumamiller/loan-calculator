@@ -144,7 +144,7 @@ class LoanController extends Controller
         //
         try{
             foreach ($repayment_schedule as $payment) {
-                $schedule=LoanRepayment::create([
+                LoanRepayment::create([
                     'loan_id' => $loan->id,
                     'months' => $loan->months,
                     'payment_number' => $payment['payment'],
@@ -160,13 +160,14 @@ class LoanController extends Controller
     }
 
     /**
+     *
      * @param LoanRequest $request
      * @return JsonResponse|mixed
      */
     public function repayLoan(LoanRequest $request)
     {
         try{
-            //
+            // not implemented yet
             return DB::transaction(function() use ($request){
                 $validated=$request->validated();
                 //record the loan repaid
